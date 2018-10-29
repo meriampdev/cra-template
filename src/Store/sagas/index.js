@@ -1,13 +1,13 @@
 import { all, takeLatest } from 'redux-saga/effects'
 
 import {
-  TAKE_SCREEN_SHOT
+  SAMPLE_ACTION
 } from '../actionTypes'
 
-import { takeScreenShot } from './screenShot'
+import { sampleAction } from './sampleSaga'
 
 export default function* rootSaga() {
   yield all([
-    takeLatest(TAKE_SCREEN_SHOT, takeScreenShot)
+    takeLatest(SAMPLE_ACTION, sampleAction)
   ])
 }
