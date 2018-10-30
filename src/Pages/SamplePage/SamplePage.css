@@ -1,8 +1,0 @@
-:root {
-  --main-color: aliceblue;
-}
-
-.PageContainer {
-  background-color: var(--main-color);
-  height: -webkit-fill-available;
-}

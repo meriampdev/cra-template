@@ -1,0 +1,85 @@
+.sl-loader-root {
+  position: absolute;
+  top: 30%;
+  left: 26%;
+  width: 50%;
+  height: 44px;
+  border: 1px solid #E99A23;
+  border-radius: 30px;
+  background: -webkit-linear-gradient( #E99A23 , #E99A23) white no-repeat 0 0;
+  background: linear-gradient( #E99A23 , #E99A23) white no-repeat 0 0;
+  background-size: 0 100%;
+  -webkit-animation: stripes 3s linear infinite;
+          animation: stripes 3s linear infinite;
+}
+.sl-container {
+  height: 121px;
+  width: 155px;
+  position: absolute;
+  top: -13%;
+  left: 45%;
+  -webkit-animation:forwards infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 3s;
+}
+@-webkit-keyframes run {
+    0% { left: 0%;}
+    /* 50%{ left : 60%;} */
+    100%{ left: 80%;}
+}
+@-webkit-keyframes stripes {
+  to {
+    background-size:100% 100%;
+  }
+}
+
+@keyframes stripes {
+  to {
+    background-size:100% 100%;
+  }
+}
+
+
+.savvy-loader {
+  background: url('../../../Assets/images/runningman2.gif') no-repeat center center;
+  height: 48px;
+  width: 155px;
+  position: absolute;
+  z-index: 1;
+  right: -15px
+}
+.as-if-container {
+  background: none;
+  border: 5px solid #E99A23;
+  height: 121px;
+  width: 155px;
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 3000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: forwards;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 3000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: forwards;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 3000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: forwards;
+  -o-transition: rotate(360deg);
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

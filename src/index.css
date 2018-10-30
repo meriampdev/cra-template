@@ -6,6 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #07503A; */
+  height: -webkit-fill-available;
+  background-image: url('./Assets/images/toph.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
