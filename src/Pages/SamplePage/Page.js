@@ -24,12 +24,7 @@ class Page extends React.Component {
     const { sampleRedux } = this.props
     return(
       <Container>
-        {
-          this.state.showLoader ?
-            <SavvyLoader />
-          :
-            <span>TOPH IS THE GREATEST EARTH BENDER!!</span>
-        }
+        
       </Container>
     )
   }

@@ -1,0 +1,78 @@
+.header-container {
+  background: #7E57C2;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.brand-section {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.brand-section img {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.layout-search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.layout-search-bar input {
+  height: 34px;
+  width: 75%;
+  border-radius: 30px;
+  border: none;
+}
+
+.account-section {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.account-section-item {
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+.account-section-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.account {
+
+}
+.notifications {
+  align-self: center;
+}
+.messaging {
+  align-self: center;
+}
+.account-icon {
+  font-size: 30px !important;
+  color: #FFFF;
+  cursor: pointer;
+}
+.user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.user-name {
+  font-size: 20px;
+  align-self: center;
+  font-weight: 700;
+  margin-right: 7px;
+}

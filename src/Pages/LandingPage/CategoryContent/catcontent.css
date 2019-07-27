@@ -1,0 +1,84 @@
+.category-content-wrapper {
+  display: flex;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  background: #FFFF;
+  height: 200px;
+  box-shadow: 0 0px 0px #004d40, 2px 3px 3px #004d40;
+  border-radius: 7px;
+  margin: 10px;
+  cursor: pointer;
+}
+.card-media {
+  position: relative;
+  border-radius: 7px;
+}
+.card-media img {
+  border-radius: 7px;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+.card-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-rating {
+  flex: 50% 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-details {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  color: #FFF;
+  border-radius: 7px;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.card-details span.name {
+  white-space: nowrap;
+  font-weight: 700;
+}
+.card-details .location {
+  font-size: 11px;
+}
+.card-text {
+  /* max-height: 50px; */
+  flex: 50% 1;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow:hidden;
+  padding: 5px;
+  font-size: 11px;
+}
+.card-rating .rate-fill {
+  color: gold !important;
+}
+.card-rating .rate-rank {
+  background: gold !important;
+}
+
+.top-rater {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+}
+.rater-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #004d40;
+  margin-right: 10px;
+}

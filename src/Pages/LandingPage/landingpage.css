@@ -1,0 +1,18 @@
+.landingpage-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #004d40;
+  height: 100%;
+}
+.landingpage-wrapper .md-icon {
+  color: #004d40 !important;
+}
+
+.header-container {
+
+}
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}

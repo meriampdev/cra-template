@@ -1,19 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Raleway|Montserrat|Varela|Open+Sans');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  color: #FFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #07503A; */
-  height: -webkit-fill-available;
-  background-image: url('./Assets/images/toph.jpg');
+  height: 100%;
+  width: 100%;
+  background-image: url('./Assets/images/CEBU/beachin.jpg');
+  background-color: #cccccc;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }

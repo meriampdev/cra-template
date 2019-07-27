@@ -1,0 +1,112 @@
+.signup-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-box {
+  display: flex;
+  height: 90%;
+  width: 70%;
+  /* box-shadow: 0px 0px 6px rgba(255,255,255,0.5), 0px 0px 0px rgba(255,255,255,0.5); */
+}
+
+.content-paragraph {
+  flex: 90% 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #E2E2E2;
+}
+.heading {
+  font-family: 'Varela';
+  font-size: 25px;
+  color: #E2E2E2;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.content-text {
+  font-family: 'Open Sans';
+  line-height: 25px;
+}
+
+.signup-box .lef-content {
+  background: rgba(0,0,0,0.7);
+  flex: 40% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.lef-content p {
+  font-family: 'Montserrat';
+  color: #E2E2E2;
+  font-size: 11px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.signup-box .lef-content img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 35px;
+}
+
+.signup-box .right-content {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(0,0,0,0.8);
+  flex: 60% 0;
+  padding: 20px 0 20px 0;
+}
+
+.create-account {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 15px 0 15px;
+  border-bottom: 1px solid;
+}
+
+.custom-text-field {
+  background: rgba(0,0,0,0.6);
+  color: #E2E2E2;
+}
+.custom-text-field .md-text-field {
+  color: #E2E2E2;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.custom-text-field .md-floating-label {
+  color: #E2E2E2;
+  padding-left: 10px;
+}
+
+.save-signup-btn {
+  background: #f1a635;
+  height: 54px;
+  border-radius: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.save-signup-btn:hover {
+  box-shadow: 0px 0px 6px rgba(255,255,255,0.5), 0px 0px 0px rgba(255,255,255,0.5);
+}
+
+.link-to-login {
+  color: rgba(35, 29, 29, 0.81);
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.link-to-login:hover {
+  text-decoration: underline;
+}

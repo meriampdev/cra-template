@@ -1,0 +1,71 @@
+.content {
+  flex: 90% 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.search-bar {
+  height: 50px;
+  width: 80%;
+  align-self: center;
+  border-radius: 30px;
+  border: none;
+  padding-left: 20px;
+  background: rgba(255,255,255,0.6);
+}
+.search-bar::placeholder {
+  font-size: 20px;
+  color: #000;
+  padding-left: 20px;
+  font-family: 'Raleway';
+}
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0px 0px #004d40, 2px 3px 3px #004d40;
+}
+
+.hero-text {
+  align-self: center;
+}
+.hero-text p{
+  color: #004d40;
+  font-size: 50px;
+  font-weight: 700;
+  align-self: center;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Kalam';
+}
+
+.content.has-searched {
+  flex: 0;
+}
+.content.has-searched .hero-text{
+  display: none;
+}
+
+.content.has-searched .search-bar {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: move;
+          animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    position: absolute;
+    top: 150px;
+    left: 230px;
+  }
+  100% {
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    width: 40%;
+  }
+}
