@@ -1,8 +1,4 @@
 pipeline:
-  setup:
-    image: node:latest
-    commands: 
-      - npm install
   publish-web-docker:
     image: plugins/docker:1.12
     tags:
