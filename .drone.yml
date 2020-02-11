@@ -7,3 +7,9 @@ pipeline:
       - npm run build 
       - pm2 start node_modules/react-scripts/scripts/start.js --name "my-app"
 
+  deploy:
+    image: docker/compose
+    commands:
+      - docker compose up -d
+    volume:
+      - /var/run/docker.sock:/var/run/docker.sock
