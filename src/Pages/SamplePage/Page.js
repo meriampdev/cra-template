@@ -5,26 +5,11 @@ import Container from '../../Components/Container'
 import SavvyLoader from '../../Components/Preloader/Runningman'
 
 class Page extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      showLoader: true
-    }
-  }
-  componentDidMount() {
-    const self = this
-    this.props.onSampleAction()
-    setTimeout(function () {
-      self.setState({ showLoader: false })
-    }, 3000);
-  }
-
   render() {
     const { sampleRedux } = this.props
     return(
       <Container>
-        
+        <div style={{margin: "0 auto", color: "#000"}}><h1>Hello</h1></div>
       </Container>
     )
   }

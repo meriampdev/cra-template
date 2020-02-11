@@ -10,9 +10,7 @@ export default class AppRoutes extends Component {
     return(
       <Router>
         <Switch>
-          <Route exact path='/' component={LandingPage} />
-          <Route exact path='/login' component={LogIn} />
-          <Route exact path='/signup' component={SignUp} />
+          <Route exact path='/' component={Page} />
         </Switch>
       </Router>
     )
