@@ -2,9 +2,6 @@ pipeline:
   setup:
     image: node:latest
     commands: npm install
-  build:
-    image: node:latest
-    commands: npm run build
   start:
     image: node:latest
     commands: npm start
