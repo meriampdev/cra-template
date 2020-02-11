@@ -1,8 +1,6 @@
 pipeline:
   publish-web-docker:
-    image: plugins/docker:1.12
-    tags:
-      - "${DRONE_BRANCH}_${DRONE_COMMIT}"
+    image: docker:latest
     dockerfile: ./Dockerfile
     context: .
     when:
