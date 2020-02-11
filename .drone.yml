@@ -3,10 +3,10 @@ pipeline:
     image: node:latest
     commands: 
       - npm install
-      - npm install -g pm2
-      - npm run build 
   publish-web-docker:
     image: plugins/docker:1.12
+    tags:
+      - "${DRONE_BRANCH}_${DRONE_COMMIT}"
     dockerfile: ./Dockerfile
     context: .
     when:
