@@ -19,7 +19,7 @@ function reqSampleAction(data) {
 export function* sampleAction(action) {
   try {
     let response = yield call(reqSampleAction, action.payload)
-    let fromCache = response.request.fromCache
+    // let fromCache = response.request.fromCache
     console.log('fromCache', response)
     yield put({ type: `${SAMPLE_ACTION}_SUCCESS`, payload: response.data })
   } catch(e) {

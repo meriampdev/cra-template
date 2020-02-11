@@ -1,6 +1,5 @@
 import React from 'react'
 import './header.css'
-import { FontIcon, Badge } from 'react-md'
 
 class Header extends React.Component {
   constructor(props) {

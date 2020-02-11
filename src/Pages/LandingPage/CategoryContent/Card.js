@@ -1,5 +1,5 @@
 import React from 'react'
-import { FontIcon, Avatar } from 'react-md'
+import { Avatar } from 'react-md'
 
 const CardWrapper = (props) =>{
   return(
