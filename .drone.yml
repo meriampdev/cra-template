@@ -3,9 +3,7 @@ pipeline:
     image: node:latest
     commands: 
       - npm install
-      - npm install -g pm2
       - npm run build 
-      - pm2 start node_modules/react-scripts/scripts/start.js --name "my-app"
 
   deploy:
     image: docker/compose
