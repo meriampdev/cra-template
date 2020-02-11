@@ -9,7 +9,7 @@ class Page extends React.Component {
     const { sampleRedux } = this.props
     return(
       <Container>
-        <div style={{margin: "0 auto", color: "#000"}}><h1>Hello</h1></div>
+        <div style={{margin: "0 auto", color: "#000"}}><h1>Build!! Build!! Build!!</h1></div>
       </Container>
     )
   }
