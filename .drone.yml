@@ -5,5 +5,14 @@ pipeline:
       - npm install
       - npm install -g pm2
       - npm run build 
-      - pm2 start node_modules/react-scripts/scripts/start.js --name "my-app"
+  publish-web-docker:
+    image: plugins/docker:1.12
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    dockerfile: ./Dockerfile
+    context: .
+    when:
+      branch: ["master"]
+      event: [push]
+  
 
