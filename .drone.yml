@@ -7,7 +7,12 @@ pipeline:
 
   deploy:
     image: docker/compose:1.23.2
+    volumes:
+      - name: docker_sock
+        path: /var/run/docker.sock
     commands:
       - docker-compose up -d 
-    volume:
-      - /var/run/docker.sock:/var/run/docker.sock
+    volumes:
+      - name: docker_sock
+        host:
+          path: /var/run/docker.sock
