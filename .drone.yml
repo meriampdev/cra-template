@@ -3,6 +3,7 @@ pipeline:
     image: node:latest
     commands: 
       - npm install
+      - npm install -g serve
       - npm run build 
 
   deploy:
@@ -12,7 +13,7 @@ pipeline:
       user: yamyam
       key:
         from_secret: private_key
-      deploy_path: /
+      deploy_path: /cra-template
       source: .
       exclude:
         - .git
@@ -31,4 +32,5 @@ pipeline:
       script:
         - pwd
         - ls
+        - serve -s build
       debug_mode: false
