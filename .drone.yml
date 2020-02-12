@@ -8,6 +8,8 @@ pipeline:
     image: docker/compose:1.23.2
     commands:
       - docker-compose build
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
   deploy:
     image: docker/compose:1.23.2
     commands:
