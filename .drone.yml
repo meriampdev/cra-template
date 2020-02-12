@@ -5,6 +5,13 @@ pipeline:
   #     - npm install
   #     - npm run build 
 
+  build:
+    image: docker/compose:1.23.2
+    commands:
+      - docker-compose build --no-cache
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
   deploy:
     image: docker/compose:1.23.2
     commands:
