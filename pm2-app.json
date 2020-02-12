@@ -4,8 +4,7 @@
       "name"        : "cra-web-template",
       "cwd"         : "./",
       "script"      : "serve",
-      "args"        : ["-s", "build"],
-      "port"        : "8082"
+      "args"        : ["-s", "build"]
     }
   ]
 }
