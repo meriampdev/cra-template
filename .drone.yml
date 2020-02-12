@@ -7,20 +7,32 @@ pipeline:
       - npm run build 
 
   deploy:
-    image: maoxuner/drone-ssh-deploy
+    image: appleboy/drone-scp
     settings:
       host: 159.203.105.174
+      port: 22
       user: yamyam
       key:
         from_secret: SSH_KEY
-      deploy_path: /cra-template
-      PLUGIN_DEPLOY_PATH: /cra-template
+      target: /cra-template
+      rm: true
       source: .
-      exclude:
-        - .git
-        - .gitignore
-      script:
-        - pwd
-        - ls
-        - serve -s build
-      debug_mode: false
+
+  # deploy:
+  #   image: maoxuner/drone-ssh-deploy
+  #   settings:
+  #     host: 159.203.105.174
+  #     user: yamyam
+  #     key:
+  #       from_secret: SSH_KEY
+  #     deploy_path: /cra-template
+  #     PLUGIN_DEPLOY_PATH: /cra-template
+  #     source: .
+  #     exclude:
+  #       - .git
+  #       - .gitignore
+  #     script:
+  #       - pwd
+  #       - ls
+  #       - serve -s build
+  #     debug_mode: false
