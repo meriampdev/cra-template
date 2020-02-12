@@ -1,0 +1,9 @@
+version: '3.2'
+
+services:
+  webserver:
+    build: .
+    container_name: node_cra
+    tty: true
+    ports:
+      - "3002:3002"
