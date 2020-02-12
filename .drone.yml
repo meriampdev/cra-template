@@ -11,8 +11,9 @@ pipeline:
     host: 159.203.105.174
     port: 22
     username: yamyam
-    key:
-      from_secret: ssh_key
+    volumes:
+      - /home/yamyam/.ssh/id_rsa:/root/ssh/drone_rsa
+    key_path: /root/ssh/drone_rsa
     script:
       - pwd
       - ls
