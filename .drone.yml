@@ -1,9 +1,9 @@
 pipeline:
-  setup:
-    image: node:latest
-    commands: 
-      - npm install
-      - npm run build 
+  # setup:
+  #   image: node:latest
+  #   commands: 
+  #     - npm install
+  #     - npm run build 
 
   deploy:
     image: docker/compose:1.23.2

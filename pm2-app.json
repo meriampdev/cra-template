@@ -2,7 +2,7 @@
   "apps": [
     {
       "name"        : "cra-web-template",
-      "cwd"         : "/app/cra-template",
+      "cwd"         : "/app",
       "script"      : "npm",
       "args"        : ["start"],
       "port"        : "8082"
