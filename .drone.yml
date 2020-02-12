@@ -11,7 +11,8 @@ pipeline:
     host: 159.203.105.174
     port: 22
     username: yamyam
-    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1oQIxh3oTGeem5WTjH7XDdVECladzHtOtVtzpCh62HAKSLYFV8ItMU01sNBRGIUEq/w7C9mL3ZhS9FAcTX9I4ydEvvpPzRI1RN56u9dDf/B7g39JGYD500Ypn+C2nKBLAlYrJUMRFxdmj8ZCjfti/5zzWScYUAYbovjImnJnCOh2JSa1MkC7W8v5CMedpPYr5AV3pVRmGnJ+tj4cBieYi8EWkcX0BHvueYRiJQ6QgKMOABLKdRCqW2+xI1HxAEcb2N8hRQWpAKRyA9zFmm/aRlry3g483zpUEkzQwo2RITvsGtj7ThzY1fLScdpvy0TbDPoyaU21DwApe3wyxxXDx meriampales@cpe-172-118-19-115.socal.res.rr.com
+    key:
+      from_secret: ssh_key
     script:
       - pwd
       - ls
