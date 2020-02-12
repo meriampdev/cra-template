@@ -10,4 +10,3 @@ services:
     volumes:
       - ./:/app
       - /app/node_modules
-      - /app/pm2-app.json
