@@ -3,8 +3,8 @@
     {
       "name"        : "cra-web-template",
       "cwd"         : "./",
-      "script"      : "npm",
-      "args"        : ["start"],
+      "script"      : "serve",
+      "args"        : ["-s", "build"],
       "port"        : "8082"
     }
   ]
