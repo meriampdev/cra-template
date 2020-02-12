@@ -3,7 +3,6 @@ version: '3.2'
 services:
   webserver:
     build: .
-    container_name: node_cra
     tty: true
     ports:
       - "8082:8082"
@@ -11,3 +10,4 @@ services:
     volumes:
       - ./:/app/:cached
       - /app/node_modules
+      - /app
