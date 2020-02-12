@@ -13,5 +13,5 @@ services:
       - /app/public
       - /app/src
       - /app/package.json
-      - /app/package.json
+      - /app/pm2-app.json
     
