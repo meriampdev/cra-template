@@ -9,4 +9,5 @@ services:
     command: ["sh","-c","pm2-runtime start pm2-app.json"]
     volumes:
       - ./:/app
-      - /app/node_modules
+      - /app
+    
