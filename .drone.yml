@@ -11,8 +11,7 @@ pipeline:
       - cd cra-template
       - pwd
       - git pull origin master
-      - npm run build
-      - pm2 start pm2-app.json
+      - npm start
 
   # deploy:
   #   image: maoxuner/drone-ssh-deploy
