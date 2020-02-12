@@ -7,6 +7,8 @@ pipeline:
 
   deploy:
     image: docker/compose
+    environment:
+      - DOCKER_HOST=tcp://159.203.105.174:2375
     commands:
       - docker-compose up -d
     volume:

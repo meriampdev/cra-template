@@ -6,4 +6,4 @@ services:
     container_name: node_cra
     tty: true
     ports:
-      - "3002:3002"
+      - "8082:8082"
