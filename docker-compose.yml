@@ -7,3 +7,4 @@ services:
     tty: true
     ports:
       - "8082:8082"
+    command: ["sh","-c", "pm2 start node_modules/react-scripts/scripts/start.js --name "my-app""]
