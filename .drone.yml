@@ -8,6 +8,6 @@ pipeline:
   deploy:
     image: docker/compose:1.23.2
     commands:
-      - docker-compose up -d 
+      - docker-compose up -d --force-recreate
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
