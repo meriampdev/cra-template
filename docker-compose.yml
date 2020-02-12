@@ -8,6 +8,6 @@ services:
       - "8082:8082"
     # command: ["sh","-c","pm2-runtime start pm2-app.json"]
     volumes:
-      - ./:/app
-      - /app
+      - ./:/app:rw,rshared
+      - /app/node_modules
     
