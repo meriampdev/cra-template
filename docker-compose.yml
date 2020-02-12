@@ -10,8 +10,8 @@ services:
     volumes:
       - ./:/app
       - /app/node_modules
-      - ./public/:/app/public
-      - ./src/:/app/src
-      - ./package.json:/app/package.json
-      - ./pm2-app.json:/app/package.json
+      - /app/public
+      - /app/src
+      - /app/package.json
+      - /app/package.json
     
