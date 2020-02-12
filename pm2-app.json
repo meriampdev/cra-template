@@ -3,8 +3,7 @@
     {
       "name"        : "cra-web-template",
       "cwd"         : "./",
-      "script"      : "serve",
-      "args"        : ["-s", "build"]
+      "script"      : "serve -s build"
     }
   ]
 }
