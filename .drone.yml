@@ -14,6 +14,7 @@ pipeline:
       key:
         from_secret: SSH_KEY
       deploy_path: /cra-template
+      PLUGIN_DEPLOY_PATH: /cra-template
       source: .
       exclude:
         - .git
