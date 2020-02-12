@@ -6,14 +6,14 @@ pipeline:
   #     - npm run build 
 
   build:
-    image: docker/compose:1.23.2
+    image: docker/compose
     commands:
-      - docker-compose build --force --no-cache
+      - docker-compose build
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
   deploy:
-    image: docker/compose:1.23.2
+    image: docker/compose
     commands:
       - docker-compose up -d --force-recreate
     volumes:

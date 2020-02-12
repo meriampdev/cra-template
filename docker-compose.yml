@@ -6,12 +6,8 @@ services:
     tty: true
     ports:
       - "8082:8082"
-    # command: ["sh","-c","pm2-runtime start /app/pm2-app.json"]
+    # command: ["sh","-c","pm2-runtime start pm2-app.json"]
     volumes:
       - ./:/app
       - /app/node_modules
-      - public:/app/public
-      - src:/app/src
-      - pm2-app.json:/app/pm2-app.json
-      - package.json:/app/package.json
     
