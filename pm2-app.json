@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name"        : "cra-web-template",
+      "cwd"         : "/app/cra-template",
+      "script"      : "npm",
+      "args"        : ["start"],
+      "port"        : "8082"
+    }
+  ]
+}

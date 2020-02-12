@@ -7,6 +7,7 @@ services:
     tty: true
     ports:
       - "8082:8082"
-    command: ["pm2-runtime start node_modules/react-scripts/scripts/start.js --name 'my-app'"]
+    command: ["sh","-c","pm2-runtime start /app/cra-template/pm2-app.json"]
     volumes:
       - ./:/app/:cached
+      - /app/cra-template/node_modules
