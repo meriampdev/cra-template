@@ -8,19 +8,16 @@ pipeline:
 
   deploy:
     image: appleboy/drone-ssh
-    group: ssh
-    host:
-      - 159.203.105.174
-    port: 22
-    username: yamyam
-    key:
-      from_secret: SSH_KEY
-    script:
-      - pwd
-      - ls
-      - serve -s build
-    when:
-      branch: master
+    settings:
+      host: 159.203.105.174
+      port: 22
+      username: yamyam
+      key:
+        from_secret: SSH_KEY
+      script:
+        - pwd
+        - ls
+        - serve -s build
 
   # deploy:
   #   image: maoxuner/drone-ssh-deploy
