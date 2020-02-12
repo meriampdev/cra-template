@@ -12,23 +12,12 @@ pipeline:
       host: 159.203.105.174
       user: yamyam
       key:
-        from_secret: private_key
+        from_secret: ${SSH_KEY}
       deploy_path: /cra-template
       source: .
       exclude:
         - .git
         - .gitignore
-      shared_dirs:
-        - storage
-      shared_files:
-        - .env
-      writable_dirs:
-        - storage/
-        - logs
-      writable_mode: chown
-      writable_chown_user: www-data:www-data
-      writable_use_sudo: true
-      writable_recursive: true
       script:
         - pwd
         - ls
