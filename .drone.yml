@@ -12,7 +12,7 @@ pipeline:
       host: 159.203.105.174
       user: yamyam
       key:
-        from_secret: ${SSH_KEY}
+        from_secret: SSH_KEY
       deploy_path: /cra-template
       source: .
       exclude:
