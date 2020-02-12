@@ -4,7 +4,10 @@ pipeline:
   #   commands: 
   #     - npm install
   #     - npm run build 
-
+  build:
+    image: docker/compose:1.23.2
+    commands:
+      - docker-compose build
   deploy:
     image: docker/compose:1.23.2
     commands:
