@@ -10,6 +10,6 @@ pipeline:
     environment:
       - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
-      - docker-compose up -d
+      - docker-compose up -d -v /var/run/docker.sock:/var/run/docker.sock
     volume:
       - /var/run/docker.sock:/var/run/docker.sock
