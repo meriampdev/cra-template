@@ -7,7 +7,9 @@ class Page extends React.Component {
   render() {
     return(
       <Container>
-        <div style={{margin: "0 auto", color: "#000"}}><h1>Build!! Build!! Build!!</h1></div>
+        <div style={{margin: "0 auto", color: "#000"}}>
+        	<h1>Build Triggered by Drone!</h1>
+        </div>
       </Container>
     )
   }
