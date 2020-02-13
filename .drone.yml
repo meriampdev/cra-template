@@ -19,3 +19,4 @@ services:
     image: mysql
     environment:
       - DATABASE_URL=mysql://mysql@localhost
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
